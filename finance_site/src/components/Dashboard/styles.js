@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  /* padding-top: 12px; */
   background: whitesmoke;
+
+  @media (max-width: 960px) {
+    position: fixed;
+  }
 `;
 
 export const Body = styled.div`
