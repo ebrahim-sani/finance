@@ -69,6 +69,9 @@ export const Head = styled.h5`
   @media (max-width: 768px) {
     margin-top: 12px;
   }
+  span:hover {
+    text-decoration: underline;
+  }
 `;
 export const Copyright = styled.div`
   text-align: center;
