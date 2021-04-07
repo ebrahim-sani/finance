@@ -13,6 +13,12 @@ export const InnerComponent = styled.div`
   border-radius: 12px;
   box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.3);
 
+  span {
+    margin: 10px 0 14px 6px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
   @media (min-width: 960px) {
     margin: 100px 400px;
   }
@@ -24,20 +30,6 @@ export const InnerComponent = styled.div`
   }
   @media (max-width: 680px) {
     margin: 100px 50px;
-  }
-
-  span {
-    margin: 10px 0 14px 6px;
-    cursor: pointer;
-    text-decoration: underline;
-  }
-  p {
-    margin: 15px 0 14px 6px;
-    cursor: pointer;
-
-    strong {
-      text-decoration: underline;
-    }
   }
 `;
 export const Head = styled.div`

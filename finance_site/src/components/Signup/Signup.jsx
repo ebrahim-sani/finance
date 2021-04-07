@@ -19,7 +19,7 @@ const Signup = () => {
       <InnerComponent>
         <Head>
           <Logo>Finance</Logo>
-          <Tag>Sign in</Tag>
+          <Tag>Sign up</Tag>
         </Head>
         <form>
           <Input>
@@ -27,13 +27,13 @@ const Signup = () => {
             <input type="password" placeholder="Password" />
 
             <span>Forgot password?</span>
-            <Button type="submit">Sign in</Button>
+            <Button type="submit">Sign up</Button>
           </Input>
         </form>
         <Quest>
           <p>Do you have account?</p>
-          <Link to="/signup">
-            <span>Sign up here</span>
+          <Link to="/login">
+            <span>Login here</span>
           </Link>
         </Quest>
       </InnerComponent>

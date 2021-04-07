@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 import { Button } from "../Buttons/Button";
@@ -14,8 +15,12 @@ const Buttons = styled.div`
 const NavButton = () => {
   return (
     <Buttons>
-      <span>Sign up</span>
-      <Button>Login</Button>
+      <Link to="/signup">
+        <span>Sign up</span>
+      </Link>
+      <Link to="/login">
+        <Button>Login</Button>
+      </Link>
     </Buttons>
   );
 };
