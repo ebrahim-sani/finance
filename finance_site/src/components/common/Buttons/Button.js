@@ -29,4 +29,8 @@ export const WButton = styled.button`
   user-select: none;
   color: black;
   background: whitesmoke;
+
+  @media (max-width: 760px) {
+    width: 17rem;
+  }
 `;

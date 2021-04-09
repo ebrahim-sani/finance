@@ -10,6 +10,9 @@ const Buttons = styled.div`
     font-weight: 550;
     cursor: pointer;
   }
+  @media (max-width: 760px) {
+    display: none;
+  }
 `;
 
 const NavButton = () => {

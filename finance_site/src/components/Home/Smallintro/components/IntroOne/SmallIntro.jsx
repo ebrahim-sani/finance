@@ -18,7 +18,7 @@ const SmallIntroOne = () => {
           architecto dolor molestias dolore nostrum deleniti perspiciatis rerum
           sapiente iusto. Ea?
         </p>
-        <Button>Learn More</Button>
+        <Button style={{ width: "100px" }}>Learn More</Button>
       </Intro>
     </Wrapper>
   );

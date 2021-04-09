@@ -1,5 +1,7 @@
-import { Link } from "gatsby";
-import React from "react";
+import { Link, navigate } from "gatsby";
+import React, { useRef } from "react";
+
+import { auth } from "../../firebase";
 import { Button } from "../common/Buttons/Button";
 import LogNav from "../theme/Header/LogNav/LogNav";
 import {
@@ -12,7 +14,26 @@ import {
   Quest,
 } from "./style";
 
-const Signup = () => {
+const Login = () => {
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
+  const signIn = (e) => {
+    e.preventDefault();
+
+    auth
+      .signInWithEmailAndPassword(
+        emailRef.current.value,
+        passwordRef.current.value
+      )
+      .then((authUser) => {
+        console.log(authUser);
+      })
+      .then(navigate("/dashboard"))
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+
   return (
     <Wrapper>
       <LogNav />
@@ -23,11 +44,11 @@ const Signup = () => {
         </Head>
         <form>
           <Input>
-            <input type="email" placeholder="Email or Phone" />
-            <input type="password" placeholder="Password" />
+            <input type="email" ref={emailRef} placeholder="Email or Phone" />
+            <input type="password" ref={passwordRef} placeholder="Password" />
 
             <span>Forgot password?</span>
-            <Button type="submit">Sign in</Button>
+            <Button onClick={signIn}>Sign in</Button>
           </Input>
         </form>
         <Quest>
@@ -41,4 +62,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;

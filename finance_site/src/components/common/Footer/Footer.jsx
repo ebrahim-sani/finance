@@ -17,7 +17,7 @@ import {
   Copyright,
   InnerComponent,
 } from "./styles";
-import { Button } from "../Buttons/Button";
+import { WButton } from "../Buttons/Button";
 
 const Footer = () => {
   return (
@@ -60,7 +60,7 @@ const Footer = () => {
             <Head>Subscibe</Head>
             <Field>
               <input type="email" placeholder="Email" />
-              <Button>Submit</Button>
+              <WButton>Submit</WButton>
             </Field>
           </EmailSub>
         </InnerComponent>

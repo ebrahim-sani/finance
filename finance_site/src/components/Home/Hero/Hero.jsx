@@ -3,6 +3,7 @@ import Header from "../../theme/Header/index";
 import strategic_finance from "../../../assets/images/strategic_finance.jpg";
 import { Wrapper, InnerWrapper, HeroImage, HeroIntro, Buttons } from "./styles";
 import { Button, WButton } from "../../common/Buttons/Button";
+import { navigate } from "gatsby-link";
 
 const HeroSection = () => {
   return (
@@ -19,7 +20,7 @@ const HeroSection = () => {
             perspiciatis rerum sapiente iusto. Ea?
           </p>
           <Buttons>
-            <Button>Get Started</Button>
+            <Button onClick={() => navigate("/signup")}>Get Started</Button>
             <WButton
               style={{
                 marginLeft: 12,

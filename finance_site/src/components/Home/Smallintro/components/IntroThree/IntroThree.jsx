@@ -19,7 +19,7 @@ const SmallIntroThree = () => {
           aliquid voluptatum molestias quasi doloribus. Assumenda, quo? Dolorem
           distinctio blanditiis neque sunt.
         </p>
-        <Button>See More</Button>
+        <Button style={{ width: "100px" }}>See More</Button>
       </Intro>
     </Wrapper>
   );

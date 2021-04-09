@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  background: black;
+`;
 export const Component = styled.div`
   margin: 0 100px;
   margin-top: 80px;
@@ -26,7 +28,11 @@ export const Menu = styled.div`
   span {
     line-height: 26px;
     cursor: pointer;
+    color: #fff;
   }
+  /* span:hover {
+    text-decoration: underline;
+  } */
 `;
 export const Contact = styled.div`
   display: flex;
@@ -35,6 +41,7 @@ export const Contact = styled.div`
   span {
     line-height: 26px;
     cursor: pointer;
+    color: #fff;
   }
 `;
 export const EmailSub = styled.div``;
@@ -63,7 +70,8 @@ export const Field = styled.div`
 `;
 export const Icon = styled.div``;
 export const Head = styled.h5`
-  color: black;
+  margin-top: 10px;
+  color: white;
   font-size: 1.3rem;
 
   @media (max-width: 768px) {
@@ -79,6 +87,6 @@ export const Copyright = styled.div`
   padding: 0.7rem 2.3rem;
 
   span {
-    color: #ffff;
+    color: #fff;
   }
 `;

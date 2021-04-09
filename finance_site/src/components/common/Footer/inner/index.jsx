@@ -12,11 +12,11 @@ const Icon = styled.div`
   align-items: center;
   font-size: 20px;
   padding-right: 5px;
-  color: black;
+  color: #fff;
 `;
 const IconName = styled.span`
-  color: black;
-  font-size: 20px;
+  color: #fff;
+  font-size: 17px;
 `;
 
 const Social = ({ icon, name }) => {

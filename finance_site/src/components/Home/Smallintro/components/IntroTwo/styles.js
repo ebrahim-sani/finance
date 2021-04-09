@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 30px;
-    margin-top: 40px;
+    margin-top: 75px;
   }
 `;
 
@@ -30,7 +30,7 @@ export const Intro = styled.div`
 
   span {
     font-weight: 550;
-    margin-bottom: 12px;
+    margin: 12px;
   }
   h2 {
     font-size: 3rem;

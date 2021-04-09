@@ -16,7 +16,9 @@ const SmallIntroTwo = () => {
           Provident eius culpa quam maiores facilis consectetur nam natus
           voluptates reprehenderit, molestiae ullam sed?
         </p>
-        <Button>Learn More</Button>
+        <Button style={{ width: "100px", marginBottom: "20px" }}>
+          Learn More
+        </Button>
       </Intro>
       <Image>
         <img src={transaction} alt="" />
