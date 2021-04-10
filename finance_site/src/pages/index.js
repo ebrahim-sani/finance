@@ -6,12 +6,15 @@ import HeroSection from "../components/Home/Hero/Hero";
 import HowItWork from "../components/Home/How/How";
 import { SmallIntro } from "../components/Home/Smallintro/index";
 
-export default () => (
-  <Layout>
-    <HeroSection />
-    <SmallIntro />
-    <HowItWork />
-    <Feature />
-    <Footer />
-  </Layout>
-);
+const Index = () => {
+  return (
+    <Layout>
+      <HeroSection />
+      <SmallIntro />
+      <HowItWork />
+      <Feature />
+      <Footer />
+    </Layout>
+  );
+};
+export default Index;

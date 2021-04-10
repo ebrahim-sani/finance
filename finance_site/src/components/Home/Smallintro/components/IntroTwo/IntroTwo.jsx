@@ -5,7 +5,7 @@ import { Button } from "../../../../common/Buttons/Button";
 
 const SmallIntroTwo = () => {
   return (
-    <Wrapper>
+    <Wrapper id="services">
       <Intro>
         <span>Good Security and Protection</span>
         <h2>Custom Protection and Safe Transaction.</h2>

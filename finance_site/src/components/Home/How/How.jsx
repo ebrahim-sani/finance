@@ -4,7 +4,7 @@ import { Wrapper, Container } from "./styles";
 
 const HowItWork = () => {
   return (
-    <Wrapper>
+    <Wrapper id="features">
       <Container>
         <span>Why Us?</span>
         <h2>How It Works</h2>

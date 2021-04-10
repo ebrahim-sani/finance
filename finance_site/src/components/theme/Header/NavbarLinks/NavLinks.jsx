@@ -8,16 +8,16 @@ const NavbarLinks = ({ Desktop }) => {
       <Link to="/">
         <span>Home</span>
       </Link>
-      <Link to="/about">
+      <Link to="/#about">
         <span>About</span>
       </Link>
-      <Link to="/#feature">
+      <Link to="/#features">
         <span>Feature</span>
       </Link>
-      <Link to="/#service">
+      <Link to="/#services">
         <span>Services</span>
       </Link>
-      <Link to="/contact">
+      <Link to="/">
         <span>Contact</span>
       </Link>
     </Wrapper>

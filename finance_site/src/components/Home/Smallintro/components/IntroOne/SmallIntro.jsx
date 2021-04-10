@@ -5,7 +5,7 @@ import { Button } from "../../../../common/Buttons/Button";
 
 const SmallIntroOne = () => {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <Image>
         <img src={finance} alt="" />
       </Image>
